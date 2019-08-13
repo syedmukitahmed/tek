@@ -6,7 +6,7 @@ public class AppTest
 {
 	
 	@Test (priority = 1)
-	public void getCountryOfDhaka() {
+	public void getCountryOfDhaka()  {
 		
 		String cityToCheck = "dhaka";
 		APIs.getName(cityToCheck);
@@ -24,7 +24,7 @@ public class AppTest
 	
 	
 	@Test (priority = 3)
-	public void getCountryOfLondon() {
+	public void getCountryOfLondon()  {
 		
 		String cityToCheck = "london";
 		APIs.getName(cityToCheck);
@@ -43,9 +43,17 @@ public class AppTest
 	
 	
 	@Test (priority = 5)
-	public void testNgtvTC() {
+	public void negativeTC1()  {
 		
-		String cityToCheck = "Lopdop";
+		String cityToCheck = "lopdop";
+		APIs.getName(cityToCheck);
+		System.out.println(cityToCheck+" belongs to "+APIs.countryName);
+	}
+	
+	@Test (priority = 6)
+	public void negativeTC2() {
+		
+		String cityToCheck = "nasa";
 		
 		APIs.getAlpha2Code(cityToCheck);
 		System.out.println("alpha2Code of "+APIs.countryName+" is "+APIs.countryalpha2Code);
