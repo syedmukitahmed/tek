@@ -5,7 +5,8 @@
     <classes>
       <class name="Test.restcountries.AppTest">
         <methods>
-          <include name="testNgtvTC"/>
+          <include name="negativeTC2"/>
+          <include name="negativeTC1"/>
         </methods>
       </class> <!-- Test.restcountries.AppTest -->
     </classes>
